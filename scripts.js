@@ -155,7 +155,7 @@ document.querySelectorAll('.expandable-section').forEach(section => {
         alert('Please fill in all fields.');
     }
 });*/
-
+/*
 function copyText() {
     navigator.clipboard.writeText("samu.syrjanen@gmail.com").then(() => {
         const feedback = document.getElementById("copy-feedback");
@@ -166,14 +166,14 @@ function copyText() {
     }).catch(err => {
         console.error('Failed to copy text: ', err);
     });
-}
+}*/
 
 // LANGUAGE SELECTION
 fetch("translations.json")
   .then((response) => response.json())
   .then((translations) => {
     const languageButtons = document.querySelectorAll("#language-buttons button");
-    let currentLanguage = "english";
+    let currentLanguage = "finnish"; // Default language
 
     function updateLanguage(language) {
       document.querySelectorAll("[data-key]").forEach((element) => {
@@ -182,6 +182,11 @@ fetch("translations.json")
           element.textContent = translations[language][key];
         }
       });
+
+      // Update the highlight on the language buttons
+      languageButtons.forEach((button) => button.classList.remove("active"));
+      document.querySelector(`#${language}-button`).classList.add("active");
+
       currentLanguage = language;
     }
 
