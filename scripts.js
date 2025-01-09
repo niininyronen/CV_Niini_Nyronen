@@ -169,7 +169,7 @@ function copyText() {
 }
 
 // LANGUAGE SELECTION
-/*fetch("translations.json")
+fetch("translations.json")
   .then((response) => response.json())
   .then((translations) => {
     const languageButtons = document.querySelectorAll("#language-buttons button");
@@ -196,4 +196,4 @@ function copyText() {
       });
     });
   })
-  .catch((error) => console.error("Error loading translations:", error));*/
+  .catch((error) => console.error("Error loading translations:", error));

@@ -297,12 +297,6 @@ hr {
     text-underline-offset: 4px;
 }
 
-#left-nav ul li a.active {
-    /*color: #fff;*/
-    /*background: #00B6BC;*/ /* Ensure this contrast fits */
-    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
-}
-
 /* Add a bar indicator to the left of active link */
 #left-nav ul li a.active::before {
     content: "";
@@ -416,15 +410,6 @@ hr {
     transition: all 0.3s ease-in-out;
     /*background: #fff;*/
     /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
-}
-
-#nav-links ul li a:hover {
-    /*color: Black;*/
-    /*background: #eaeaea;*/
-    /*text-decoration: underline;
-    text-decoration-color: #0A758F;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;*/
 }
 
 #nav-links ul li a.active {
